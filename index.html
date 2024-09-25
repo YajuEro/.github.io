@@ -13,16 +13,12 @@
         h1 {
             font-size: 24px; /* 固定サイズ */
         }
-        button {
+        .link {
             font-size: 20px; /* 固定サイズ */
-            padding: 10px 20px;
-            margin: 10px;
-        }
-        .author {
             color: blue;
             text-decoration: underline;
             cursor: pointer;
-            font-size: 18px; /* 固定サイズ */
+            margin: 10px;
         }
     </style>
     <script>
@@ -34,13 +30,10 @@
 <body>
 
 <h1>あなたは810歳以上ですか？</h1>
-<form>
-    <button type="button" onclick="redirect('https://www.google.com')">はい</button>
-    <button type="button" onclick="redirect('https://www.yahoo.com')">いいえ</button>
-</form>
+<p class="link" onclick="redirect('https://www.google.com')">はい</p>
+<p class="link" onclick="redirect('https://www.yahoo.com')">いいえ</p>
 
 <p>作成者<span class="author" onclick="redirect('https://x.com/japanshortpro')">@japanshortpro</span></p>
 
 </body>
 </html>
-
