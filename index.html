@@ -4,7 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>淫夢集</title>
-    <style>
+    <style type="text/css">
+        /* CSS2準拠のスタイル */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -18,10 +19,20 @@
             color: blue;
             text-decoration: underline;
             cursor: pointer;
-            margin: 10px;
+            margin: 0 15px; /* 左右の余白 */
+            display: inline; /* 横並びに */
+        }
+        .author {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .options {
+            margin-top: 20px;
         }
     </style>
-    <script>
+    <script type="text/javascript">
         function redirect(url) {
             window.location.href = url;
         }
@@ -30,8 +41,10 @@
 <body>
 
 <h1>あなたは810歳以上ですか？</h1>
-<p class="link" onclick="redirect('https://www.google.com')">はい</p>
-<p class="link" onclick="redirect('https://www.yahoo.com')">いいえ</p>
+<div class="options">
+    <span class="link" onclick="redirect('https://www.google.com')">はい</span>
+    <span class="link" onclick="redirect('https://www.yahoo.com')">いいえ</span>
+</div>
 
 <p>作成者<span class="author" onclick="redirect('https://x.com/japanshortpro')">@japanshortpro</span></p>
 
