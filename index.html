@@ -8,9 +8,6 @@
             padding: 0;
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4; /* 背景色を薄い灰色に */
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"><text x="0" y="200" fill="rgba(0, 0, 0, 0.2)" font-size="48" transform="rotate(-45)">淫夢は義務</text></svg>');
-            background-repeat: repeat; /* 背景画像を繰り返し */
         }
 
         h1 {
@@ -36,13 +33,15 @@
             color: red;
         }
 
-        @media screen and (max-width: 600px) {
-            h1 {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 1em;
-            }
+        .background-text {
+            font-size: 5em; /* テキストサイズを大きく */
+            color: rgba(0, 0, 0, 0.1); /* 薄い色に設定 */
+            position: fixed; /* 画面に固定 */
+            top: 50%; /* 縦位置調整 */
+            left: 50%; /* 横位置調整 */
+            margin-left: -150px; /* 左に移動 */
+            margin-top: -50px; /* 上に移動 */
+            white-space: nowrap; /* 折り返しを防ぐ */
         }
     </style>
 </head>
@@ -58,6 +57,8 @@
 <p><big>作成者 <a href="https://x.com/japanshortpro">@japanshortpro</a></big></p>
 
 <p><big><span class="red-text">なお、この先すべてのリンク先のサイトは古いブラウザでは閲覧できません。</span></big></p>
+
+<div class="background-text">淫夢は義務</div> <!-- 背景テキスト -->
 
 </body>
 </html>
